@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,r,rev=0,m,k,d,ver=0;
+    cout<<"enter number";
+    cin>>n;
+    m=n;
+    while(n>0){
+        r=n%10;
+        n=n/10;
+        rev=rev*10+r;
+        
+    }
+    cout<<rev<<endl;
+    k=rev;
+    while(k>0){
+       d=k%10;
+       k=k/10;
+       ver=ver*10+d;
+       
+       switch (d){
+           case 1: cout<<"one";
+                   break;
+           case 2: cout<<"two";
+                   break;
+           case 3: cout<<"three";
+                   break;
+       }
+    }
+    //cout<<ver;
+    
+    return 0;
+}
